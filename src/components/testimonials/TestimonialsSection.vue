@@ -1,6 +1,6 @@
 <template>
   <div class="section-container section-testimonials">
-    <h1 class="title">Témoignages clients</h1>
+    <h1 class="title">Témoignages</h1>
 
     <div class="swiper-container">
       <div class="swiper-wrapper">

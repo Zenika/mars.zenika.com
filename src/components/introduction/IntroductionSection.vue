@@ -5,8 +5,6 @@
       <div class="content">
         <p class="description">
           <span v-html="introductionDescription"></span>
-          <br/><br/>
-          <span>Retrouvez plus d'informations sur <a href="https://www.zenika.com" target="_blank">zenika.com</a>.</span>
         </p>
         <div class="flex-align twitter-feed-container">
           <a data-chrome="nofooter" data-width="500" data-height="430" class="twitter-timeline" :href="twitterUrl" target="_blank"></a>
