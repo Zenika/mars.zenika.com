@@ -103,6 +103,7 @@ export default {
 
       .testimonial-content {
         font-size: 20px;
+				overflow-wrap: break-word;
       }
 
       @media (max-width: 1500px) {
