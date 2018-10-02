@@ -84,6 +84,7 @@ export default {
 
     .testimonial-header {
       margin-bottom: 30px;
+    	flex-flow: row wrap;
 
       .testimonial-author {
       }
