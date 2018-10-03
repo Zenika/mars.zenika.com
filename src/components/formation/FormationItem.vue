@@ -12,20 +12,6 @@
     </div>
     <div class="description" v-html="data.description"></div>
     <znk-button class="participate" :href="data.link">Participer</znk-button>
-    <div class="dates">
-      <h3 class="dates-title">Prochaines sessions</h3>
-      <div v-if="data.dates.length === 0" class="dates-empty">
-        Nous n'avons pas de formation planifiée pour le moment, mais n'hésitez pas à
-        <router-link class="dates-empty-link" to="/contact">prendre contact</router-link> !
-      </div>
-      <ul v-else class="dates-list">
-        <li v-for="date in data.dates">
-          <a class="dates-link" :href="linkSession" target="_blank">
-            <formation-date :date="date"></formation-date>
-          </a>
-        </li>
-      </ul>
-    </div>
     <div class="footer">
       <div class="icons">
         <tooltip-image v-if="data.certifying" src="static/assets/img/certifying.svg" title="Certifiante"></tooltip-image>
