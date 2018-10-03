@@ -20,7 +20,7 @@
 						<a target="_blank" href="https://www.zenika.com/">zenika.com</a> 
 					
 					</p>
-					<p>
+					<p style="padding-left: 15px;">
 							<a target="_blank" href="https://nantes.zenika.com/">nantes.zenika.com</a>
 					</p>
 					
