@@ -63,6 +63,7 @@
   "dependencies": {
     "axios": "^0.17.1",
     "countup.js": "^1.9.3",
+    "express-sslify": "^1.2.0",
     "ityped": "^1.0.1",
     "lodash": "^4.17.5",
     "moment": "^2.20.1",

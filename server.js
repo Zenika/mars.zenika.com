@@ -1,17 +1,15 @@
 
 const express = require('express');
 const path = require('path');
+const enforce = require('express-sslify');
 const app = express();
 
-// app.get('*', (req, res, next) => {  
-//   if (!req.protocol ) 
-//     return res.redirect('https://' + req.headers.host + req.url);
-//   else
-//     next()
-// })
+app.use(enforce.HTTPS({ trustProtoHeader: true }))
 
-app.get('/*', (req, res) =>
- res.sendFile(path.join(__dirname, './dist'))
-);
+app.use(express.static(path.join(__dirname, './dist')))
+
+app.get('/*', (req, res) => {
+  res.sendFile(path.join(__dirname, './dist'))
+});
 
 app.listen(process.env.PORT);
