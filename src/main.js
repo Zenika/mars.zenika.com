@@ -25,19 +25,14 @@ Vue.use(VueScrollTo, {
   onCancel: false
 })
 
+const id = config.ANALYTICS_KEY
+
+Vue.use(VueAnalytics, { id, router })
+
 store.dispatch('fetchAppData').then(() => {
   const agencyName = store.state.config.agencyName
 
   document.title = `Zenika ${agencyName} : Formations - Conseil - Jobs - Événements`
-  console.log(`
-  _____          _ _
-  |__  /___ _ __ (_) | ____ _
-    / // _ \\ '_ \\| | |/ / _\` |
-  / /|  __/ | | | |   < (_| |
-  /____\\___|_| |_|_|_|\\_\\__,_|
-
-  Tu es développeur ? Viens rejoindre la team ${agencyName} !
-  https://jobs.zenika.com/category/${agencyName.toLowerCase()}/`)
 
   /* eslint-disable no-new */
   new Vue({

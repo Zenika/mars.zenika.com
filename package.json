@@ -6,7 +6,7 @@
   "private": true,
   "scripts": {
     "dev": "node build/dev-server.js",
-    "start": "node build/build.js && http-server ./dist",
+    "start": "node build/build.js && node server.js & http-server -p 443 ./dist",
     "build": "node build/build.js",
     "lint": "eslint --ext .js,.vue src",
     "test": "echo \"No test specified\""
@@ -35,7 +35,7 @@
     "eslint-plugin-promise": "^3.6.0",
     "eslint-plugin-standard": "^3.0.1",
     "eventsource-polyfill": "^0.9.6",
-    "express": "^4.16.2",
+    "express": "^4.16.3",
     "extract-text-webpack-plugin": "^3.0.2",
     "file-loader": "^1.1.6",
     "friendly-errors-webpack-plugin": "^1.1.3",
