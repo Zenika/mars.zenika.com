@@ -18,7 +18,10 @@
 					<i class="material-icons">language</i>
 					<p>
 						<a target="_blank" href="https://www.zenika.com/">zenika.com</a> 
-						<a target="_blank" href="https://www.nantes.zenika.com/">nantes.zenika.com</a>
+					
+					</p>
+					<p>
+							<a target="_blank" href="https://nantes.zenika.com/">nantes.zenika.com</a>
 					</p>
 					
 				</div>
