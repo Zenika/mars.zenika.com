@@ -26,7 +26,7 @@ module.exports = function () {
   var warnings = []
   for (var i = 0; i < versionRequirements.length; i++) {
     var mod = versionRequirements[i]
-    if (!semver.satisfies(mod.currentVersion, mod.versionRequirement)) {
+    if (!semver.satisfies(mod.currentVersion, mod.versionRequirement, { includePrerelease: true })) {
       warnings.push(mod.name + ': ' +
         chalk.red(mod.currentVersion) + ' should be ' +
         chalk.green(mod.versionRequirement)
